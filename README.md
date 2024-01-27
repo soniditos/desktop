@@ -2,10 +2,6 @@
 
 ![Soniditos Logo](https://soniditos.com/storage/branding_media/959516b0-83c4-41f5-ac62-c56766df775a.png)
 
-**Versión:** 1.0.0
-
-**Descripción:** Música en streaming
-
 ## Tabla de Contenidos
 
 - [Introducción](#introducción)
