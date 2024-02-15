@@ -66,7 +66,7 @@ Para fines de desarrollo, se utilizan las siguientes devDependencies:
 
 ## TODO
 
-- [ ] Mejorar la presencia en Discord.
+- [X] Mejorar la presencia en Discord.
 - [X] Implementar autenticación de usuarios.
 - [X] Agregar soporte para listas de reproducción personalizadas.
 - [ ] Mejorar la interfaz de usuario para una mejor experiencia del usuario.
