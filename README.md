@@ -64,14 +64,14 @@ Para fines de desarrollo, se utilizan las siguientes devDependencies:
 - [electron-builder](https://www.npmjs.com/package/electron-builder): ^24.9.1
 - [electron-icon-maker](https://www.npmjs.com/package/electron-icon-maker): ^0.0.5
 
-## TODO
+## TO-DO
 
 - [X] Mejorar la presencia en Discord.
 - [X] Implementar autenticación de usuarios.
 - [X] Agregar soporte para listas de reproducción personalizadas.
-- [ ] Mejorar la interfaz de usuario para una mejor experiencia del usuario.
+- [ ] Mejorar la ventana con sus propios estilos.
 - [X] Mejorar la gestión de errores y el registro.
-- [ ] Probar la aplicación en varias plataformas.
+- [ ] Compilar la aplicación en varias plataformas.
 
 ## Licencia
 
