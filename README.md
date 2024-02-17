@@ -36,8 +36,11 @@ npm start
 ## Scripts
 
 **• start:** Inicia la aplicación utilizando Electron.
+
 **• pack:** Crea una versión empaquetada de la aplicación en el directorio `./dist`.
+
 **• dist:** Construye paquetes distribuibles para la aplicación.
+
 **• generate-icons:** Crea iconos específicos de la plataforma utilizando Electron Icon Maker.
 
 ## Construcción y Distribución
