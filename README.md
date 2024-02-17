@@ -11,7 +11,7 @@
 - [Construcción y Distribución](#construcción-y-distribución)
 - [Dependencias](#dependencias)
 - [Desarrollo](#desarrollo)
-- [TO-DO](#todo)
+- [TO-DO](#to-do)
 - [Licencia](#licencia)
 - [Autor](#autor)
 
