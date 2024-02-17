@@ -48,7 +48,9 @@ npm start
 La aplicación se construye y distribuye utilizando Electron Builder. La configuración de construcción incluye ajustes para las plataformas Windows, macOS y Linux.
 
 **• Windows:** Icono - `./build/icons/win/icon.ico`
+
 **• macOS:** Icono - `./build/icons/mac/icon.icns`
+
 **• Linux:** Icono - `./build/icons/png/32x32.png`
 
 La distribución se gestiona a través de las versiones de GitHub.
