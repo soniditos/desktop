@@ -17,7 +17,8 @@
 
 ## Introducción
 
-Soniditos Desktop es una aplicación de música en streaming construida con Electron. Proporciona una plataforma para transmitir música con características adicionales como Discord Rich Presence y una barra de título personalizada.
+Soniditos Desktop es una aplicación de música en streaming construida con Electron.
+Proporciona acceso a la plataforma de música con características adicionales como Discord Rich Presence en tiempo real.
 
 ## Instalación
 
