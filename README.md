@@ -28,7 +28,7 @@ Para comenzar con Soniditos Desktop, sigue estos pasos:
 2. Navega al directorio del proyecto: `cd soniditos-desktop`
 3. Instala las dependencias: `npm install`
 4. Inicia una distribución: `npm run dist`
-5. ¡Busca en la carpeta generada /dist Soniditos Setup.exe y disfruta! 
+5. ¡Busca en la carpeta generada `/dist` Soniditos Setup.exe y disfruta! 
 
 ## Uso
 
