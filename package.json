@@ -1,6 +1,6 @@
 {
-  "name": "soniditos-desktop",
-  "version": "1.0.2",
+  "name": "soniditos",
+  "version": "1.0.1",
   "description": "Música en streaming",
   "main": "src/main.js",
   "scripts": {
@@ -27,14 +27,9 @@
       "icon": "./build/icons/win/icon.ico",
       "target": [
         {
-          "target": "msi",
-          "arch": [
-            "x64",
-            "arm64"
-          ]
+          "target": "portable"
         }
-      ],
-      "publisherName": "Soniditos"
+      ]
     },
     "mac": {
       "icon": "./build/icons/mac/icon.icns"
