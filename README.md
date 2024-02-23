@@ -80,7 +80,7 @@ Para fines de desarrollo, se utilizan las siguientes devDependencies:
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT; consulta el archivo [LICENSE](./LICENSE) para obtener más detalles.
+Este proyecto está licenciado bajo la Licencia MIT; consulta el archivo [LICENSE](./license) para obtener más detalles.
 
 ## Autor
 
