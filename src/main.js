@@ -2,7 +2,6 @@ const { app, BrowserWindow, Tray, Menu } = require('electron');
 const path = require('path');
 const rpc = require('discord-rpc');
 const trayIconPath = path.join(__dirname, './assets/tray-icon.png');
-const { autoUpdater } = require('electron-updater');
 
 let win;
 let tray;
@@ -136,12 +135,6 @@ function createTray() {
 app.whenReady().then(() => {
   createWindow();
   createTray();
-  
-  if (!app.isPackaged) {
-    autoUpdater.autoDownload = true;
-  } else {
-    autoUpdater.checkForUpdatesAndNotify();
-  }
 
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {
