@@ -1,5 +1,5 @@
 {
-  "name": "soniditos",
+  "name": "soniditos-desktop",
   "version": "1.0.1",
   "description": "Música en streaming",
   "main": "src/main.js",
@@ -24,12 +24,7 @@
       "output": "dist"
     },
     "win": {
-      "icon": "./build/icons/win/icon.ico",
-      "target": [
-        {
-          "target": "portable"
-        }
-      ]
+      "icon": "./build/icons/win/icon.ico"
     },
     "mac": {
       "icon": "./build/icons/mac/icon.icns"
