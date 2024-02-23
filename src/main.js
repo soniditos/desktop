@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Tray, Menu, ipcMain } = require('electron');
+const { app, BrowserWindow, Tray, Menu } = require('electron');
 const path = require('path');
 const rpc = require('discord-rpc');
 const trayIconPath = path.join(__dirname, './assets/tray-icon.png');
@@ -8,21 +8,28 @@ let win;
 let tray;
 let client;
 
-
 function createWindow() {
   win = new BrowserWindow({
     width: 1366,
     height: 920,
     minWidth: 1366,
     minHeight: 920,
-    titleBarStyle: 'customButtonsOnHover',
+    center: true,
+    show: true,
+    frame: true,
+    vibrancy: 'window',
+    background: '#0a0a0b',
     icon: path.join(__dirname, './src/assets/tray-icon.png'),
+    titleBarStyle: 'default',
+    titleBarOverlay: {
+      color: '#0a0a0b'
+    },
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true,
       enableRemoteModule: true
     },
-    backgroundColor: '#12151D', 
+    backgroundColor: '#0a0a0b'
   });
 
   win.loadURL('https://soniditos.com');
@@ -37,10 +44,6 @@ function createWindow() {
       client.login({ clientId: config.ClientID }).catch(console.error);
 
       client.on('ready', () => {
-        console.log('[DEBUG] Presence now active!')
-        console.log('[WARN] Do not close this Console as it will terminate the rpc')
-        console.log('=================== Error Output ===================')
-
         async function updatePresence() {
           const mediaTitlePromise = win.webContents.executeJavaScript('navigator.mediaSession.metadata ? navigator.mediaSession.metadata.title : null');
           const mediaTitle = await mediaTitlePromise;
@@ -80,11 +83,12 @@ function createWindow() {
             }
           });
         }
-
+        
         setInterval(updatePresence, 1000);
       });
     } catch (error) {
       console.error('Error loading config:', error.message);
+      console.error('Error en la función updatePresence:', error.message);
     }
   });
 
@@ -98,7 +102,6 @@ function createWindow() {
   });
 }
 
-// Función para convertir el tiempo de duración del formato 'MM:SS' a milisegundos
 function parseTimestamp(timestamp) {
   const [minutes, seconds] = timestamp.split(':');
   return (parseInt(minutes, 10) * 60 + parseInt(seconds, 10)) * 1000;
@@ -135,7 +138,7 @@ app.whenReady().then(() => {
   createTray();
   
   if (!app.isPackaged) {
-    autoUpdater.autoDownload = false;
+    autoUpdater.autoDownload = true;
   } else {
     autoUpdater.checkForUpdatesAndNotify();
   }

@@ -2,9 +2,5 @@
     "ClientID": "1097114044793618494",
     "LargeImage": "cover", 
     "LargeImageText": "soniditos.com",
-    "Button1": "Escuchar ahora",
-    "Url1": "https://soniditos.com/",
-    "Button2": "Descargar",
-    "Url2": "https://soniditos.com/descargar",
-    "Details": "Escuchando música..."
+    "Button1": "Escuchar ahora"
 }

@@ -1,6 +1,6 @@
 {
   "name": "soniditos-desktop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Música en streaming",
   "main": "src/main.js",
   "scripts": {
@@ -16,9 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
-    "custom-electron-titlebar": "^4.2.8",
     "discord-rpc": "^4.0.1",
-    "electron-custom-titlebar": "^4.0.2",
+    "electron-titlebar": "^0.0.3",
     "electron-updater": "^6.1.7"
   },
   "build": {
@@ -28,7 +27,16 @@
       "output": "dist"
     },
     "win": {
-      "icon": "./build/icons/win/icon.ico"
+      "icon": "./build/icons/win/icon.ico",
+      "target": [
+        {
+          "target": "msi",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ]
     },
     "mac": {
       "icon": "./build/icons/mac/icon.icns"
