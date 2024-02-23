@@ -27,12 +27,14 @@ Para comenzar con Soniditos Desktop, sigue estos pasos:
 1. Clona el repositorio: `git clone https://github.com/soniditos/desktop.git`
 2. Navega al directorio del proyecto: `cd soniditos-desktop`
 3. Instala las dependencias: `npm install`
+4. Inicia una distribución: `npm run dist`
+5. ¡Busca en la carpeta generada /dist Soniditos Setup.exe y disfruta! 
 
 ## Uso
 
-Ejecuta la aplicación localmente con el siguiente comando:
+Haz cambios y ejecuta la aplicación localmente con el siguiente comando para editarla antes de hacer una distribución:
 
-npm start
+npm run start
 
 ## Scripts
 
@@ -59,8 +61,6 @@ La distribución se gestiona a través de las versiones de GitHub.
 ## Dependencias
 
 - [discord-rpc](https://www.npmjs.com/package/discord-rpc): ^4.0.1
-- [electron-custom-titlebar](https://www.npmjs.com/package/electron-custom-titlebar): ^4.0.2
-- [electron-updater](https://www.npmjs.com/package/electron-updater): ^6.1.7
 
 ## Desarrollo
 
@@ -72,16 +72,15 @@ Para fines de desarrollo, se utilizan las siguientes devDependencies:
 
 ## TO-DO
 
+- [X] Compilar la aplicación en varias plataformas.
 - [X] Mejorar la presencia en Discord.
-- [X] Implementar autenticación de usuarios.
-- [X] Agregar soporte para listas de reproducción personalizadas.
+- [ ] Habilitar la posibilidad de seleccionar cuentas de Google Chrome.
 - [ ] Mejorar la ventana con sus propios estilos.
-- [X] Mejorar la gestión de errores y el registro.
-- [ ] Compilar la aplicación en varias plataformas.
+- [ ] Mejorar la gestión de errores y el registro.
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia ISC; consulta el archivo [LICENSE](./LICENSE) para obtener más detalles.
+Este proyecto está licenciado bajo la Licencia MIT; consulta el archivo [LICENSE](./license) para obtener más detalles.
 
 ## Autor
 
