@@ -11,13 +11,14 @@
 - [Construcción y Distribución](#construcción-y-distribución)
 - [Dependencias](#dependencias)
 - [Desarrollo](#desarrollo)
-- [TODO](#todo)
+- [TO-DO](#to-do)
 - [Licencia](#licencia)
 - [Autor](#autor)
 
 ## Introducción
 
-Soniditos Desktop es una aplicación de música en streaming construida con Electron. Proporciona una plataforma para transmitir música con características adicionales como Discord Rich Presence y una barra de título personalizada.
+Soniditos Desktop es una aplicación de música en streaming construida con Electron.
+Proporciona acceso a la plataforma de música con características adicionales como Discord Rich Presence en tiempo real.
 
 ## Instalación
 
@@ -36,8 +37,11 @@ npm start
 ## Scripts
 
 **• start:** Inicia la aplicación utilizando Electron.
+
 **• pack:** Crea una versión empaquetada de la aplicación en el directorio `./dist`.
+
 **• dist:** Construye paquetes distribuibles para la aplicación.
+
 **• generate-icons:** Crea iconos específicos de la plataforma utilizando Electron Icon Maker.
 
 ## Construcción y Distribución
@@ -45,7 +49,9 @@ npm start
 La aplicación se construye y distribuye utilizando Electron Builder. La configuración de construcción incluye ajustes para las plataformas Windows, macOS y Linux.
 
 **• Windows:** Icono - `./build/icons/win/icon.ico`
+
 **• macOS:** Icono - `./build/icons/mac/icon.icns`
+
 **• Linux:** Icono - `./build/icons/png/32x32.png`
 
 La distribución se gestiona a través de las versiones de GitHub.
@@ -64,14 +70,14 @@ Para fines de desarrollo, se utilizan las siguientes devDependencies:
 - [electron-builder](https://www.npmjs.com/package/electron-builder): ^24.9.1
 - [electron-icon-maker](https://www.npmjs.com/package/electron-icon-maker): ^0.0.5
 
-## TODO
+## TO-DO
 
-- [ ] Mejorar la presencia en Discord.
+- [X] Mejorar la presencia en Discord.
 - [X] Implementar autenticación de usuarios.
 - [X] Agregar soporte para listas de reproducción personalizadas.
-- [ ] Mejorar la interfaz de usuario para una mejor experiencia del usuario.
+- [ ] Mejorar la ventana con sus propios estilos.
 - [X] Mejorar la gestión de errores y el registro.
-- [ ] Probar la aplicación en varias plataformas.
+- [ ] Compilar la aplicación en varias plataformas.
 
 ## Licencia
 
